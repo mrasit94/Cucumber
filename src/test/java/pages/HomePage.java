@@ -11,5 +11,14 @@ public class HomePage {
     }
 
     @FindBy(xpath = "(//a[@role='button'])[1]")
-    public WebElement firstlogin;
+    public WebElement firstLogin;
+
+    @FindBy(id = "dropdown-basic-button")
+    public WebElement userID;
+
+    @FindBy(xpath = "//a[text()='Logout']")
+    public WebElement logOutLink;
+
+    @FindBy(xpath = "//button[contains(text(),'OK')]")
+    public WebElement OK;
 }
